@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '-':
+        specifier: ^0.0.1
+        version: 0.0.1
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.0.0)
@@ -20,6 +23,9 @@ importers:
       bcrypt:
         specifier: ^5.1.1
         version: 5.1.1
+      bcryptjs:
+        specifier: ^3.0.2
+        version: 3.0.2
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -29,6 +35,9 @@ importers:
       next-auth:
         specifier: 5.0.0-beta.25
         version: 5.0.0-beta.25(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      pnpm:
+        specifier: ^10.7.0
+        version: 10.7.0
       postcss:
         specifier: 8.5.1
         version: 8.5.1
@@ -68,6 +77,9 @@ importers:
         version: 19.0.3(@types/react@19.0.7)
 
 packages:
+
+  '-@0.0.1':
+    resolution: {integrity: sha512-3HfneK3DGAm05fpyj20sT3apkNcvPpCuccOThOPdzz8sY7GgQGe0l93XH9bt+YzibcTIgUAIMoyVJI740RtgyQ==}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -378,6 +390,10 @@ packages:
   bcrypt@5.1.1:
     resolution: {integrity: sha512-AGBHOG5hPYZ5Xl9KXzU5iKq9516yEmvCKDg3ecP5kX2aB6UqTeXZxk2ELnDgDm6BQSMlLt9rDB4LoSMx0rYwww==}
     engines: {node: '>= 10.0.0'}
+
+  bcryptjs@3.0.2:
+    resolution: {integrity: sha512-k38b3XOZKv60C4E2hVsXTolJWfkGRMbILBIe2IBITXciy5bOsTKot5kDrf3ZfufQtQOUN5mXceUEpU1rTl9Uog==}
+    hasBin: true
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -799,6 +815,11 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
 
+  pnpm@10.7.0:
+    resolution: {integrity: sha512-a4Za1LYqHZhCth1nSjk5A7hx2SRJVPZSuIQsK1U8chdrJ49kxGPlLUD/+KujhcI1yMns9cx95P14uLttSWM6tg==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
@@ -1078,6 +1099,8 @@ packages:
 
 snapshots:
 
+  '-@0.0.1': {}
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@auth/core@0.37.2':
@@ -1340,6 +1363,8 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  bcryptjs@3.0.2: {}
 
   binary-extensions@2.3.0: {}
 
@@ -1710,6 +1735,8 @@ snapshots:
   pify@2.3.0: {}
 
   pirates@4.0.6: {}
+
+  pnpm@10.7.0: {}
 
   postcss-import@15.1.0(postcss@8.5.1):
     dependencies:
